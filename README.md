@@ -3,6 +3,7 @@
 OAUTH client assertions using applications 
 
 > Note
+> 
 > Code created from the Duende samples and Duende IdentityServer
 
 ## Migrations
