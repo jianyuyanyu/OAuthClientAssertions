@@ -6,6 +6,8 @@ OAUTH client assertions using applications
 > 
 > Code created from the Duende samples and Duende IdentityServer
 
+![flow](https://github.com/damienbod/OAuthClientAssertions/blob/main/images/OAuthCCSignedJWTAssertion.png)
+
 ## Migrations
 
 ```
