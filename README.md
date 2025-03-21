@@ -4,7 +4,7 @@ Three applications are using in this setup, an API which uses the access token, 
 
 > Note
 > 
-> Code created from the Duende samples and Duende IdentityServer
+> The code in this repository was created from the IdentityServer samples and Duende IdentityServer.
 
 ![flow](https://github.com/damienbod/OAuthClientAssertions/blob/main/images/OAuthCCSignedJWTAssertion.png)
 
