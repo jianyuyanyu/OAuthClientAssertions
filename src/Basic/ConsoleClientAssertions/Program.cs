@@ -52,6 +52,7 @@ static async Task<TokenResponse> RequestTokenAsync(SigningCredentials signingCre
     return response;
 }
 
+// Code from the Duende samples.
 static string CreateClientToken(SigningCredentials credential, string clientId, string audience)
 {
     var now = DateTime.UtcNow;
