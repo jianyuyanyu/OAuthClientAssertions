@@ -2,8 +2,7 @@
 
 Three applications are using in this setup, an API which uses the access token, an OAuth client application implemented as a console app and a OAuth server, implemented using ASP.NET Core and Duende IdentityServer. OAuth client credentials is used to acquire the access token and the signed JWT is used to authenticate the client request.
 
-> Note
-> The code in this repository was created from the IdentityServer samples and Duende IdentityServer.
+> NOTE: The code in this repository was created from the IdentityServer samples and Duende IdentityServer.
 
 ![flow](https://github.com/damienbod/OAuthClientAssertions/blob/main/images/OAuthCCSignedJWTAssertion.png)
 
