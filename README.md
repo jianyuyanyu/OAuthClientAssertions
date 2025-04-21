@@ -8,7 +8,7 @@ Three applications are using in this setup, an API which uses the access token, 
 
 ## Blogs
 
-[Implement client assertions for OAuth client credential flows in ASP.NET Core](https://damienbod.com)
+[Implement client assertions for OAuth client credential flows in ASP.NET Core](https://damienbod.com/2025/04/21/implement-client-assertions-for-oauth-client-credential-flows-in-asp-net-core/)
 
 ## Migrations
 
