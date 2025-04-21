@@ -6,6 +6,10 @@ Three applications are using in this setup, an API which uses the access token, 
 
 ![flow](https://github.com/damienbod/OAuthClientAssertions/blob/main/images/OAuthCCSignedJWTAssertion.png)
 
+## Blogs
+
+[Implement client assertions for OAuth client credential flows in ASP.NET Core](https://damienbod.com)
+
 ## Migrations
 
 ```
