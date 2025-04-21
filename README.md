@@ -16,6 +16,10 @@ Add-Migration "InitializeApp" -Context ApplicationDbContext
 Update-Database -Context ApplicationDbContext
 ```
 
+## History
+
+2025-04-21 Updated packages
+
 ## Links
 
 https://docs.duendesoftware.com/identityserver/v7/tokens/authentication/jwt/
