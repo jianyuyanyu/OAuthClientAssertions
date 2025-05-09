@@ -22,7 +22,8 @@ Update-Database -Context ApplicationDbContext
 
 ## History
 
-2025-04-21 Updated packages
+- 2025-05-09 Updated packages
+- 2025-04-21 Updated packages
 
 ## Links
 
