@@ -25,6 +25,7 @@ Update-Database -Context ApplicationDbContext
 
 ## History
 
+- 2025-05-12 Add DPoP and client credentials flow
 - 2025-05-09 Updated packages
 - 2025-04-21 Updated packages
 
