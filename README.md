@@ -4,11 +4,14 @@ Three applications are using in this setup, an API which uses the access token, 
 
 > NOTE: The code in this repository was created from the IdentityServer samples and Duende IdentityServer.
 
+## [Implement client assertions for OAuth client credential flows in ASP.NET Core](https://damienbod.com/2025/04/21/implement-client-assertions-for-oauth-client-credential-flows-in-asp-net-core/)
+
 ![flow](https://github.com/damienbod/OAuthClientAssertions/blob/main/images/OAuthCCSignedJWTAssertion.png)
 
-## Blogs
+## [Implement client assertions with client credentials flow using OAuth DPoP](https://damienbod.com)
 
-[Implement client assertions for OAuth client credential flows in ASP.NET Core](https://damienbod.com/2025/04/21/implement-client-assertions-for-oauth-client-credential-flows-in-asp-net-core/)
+![flow](https://github.com/damienbod/OAuthClientAssertions/blob/main/images/OAuthCCSignedJWTAssertionDPoP.png)
+
 
 ## Migrations
 
