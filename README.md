@@ -10,7 +10,7 @@ Three applications are using in this setup, an API which uses the access token, 
 
 ![flow](https://github.com/damienbod/OAuthClientAssertions/blob/main/images/OAuthCCSignedJWTAssertion.png)
 
-### [Implement client assertions with client credentials flow using OAuth DPoP](https://damienbod.com)
+### [Implement client assertions with client credentials flow using OAuth DPoP](https://damienbod.com/2025/05/12/implement-client-assertions-with-client-credentials-flow-using-oauth-dpop/)
 
 ![flow](https://github.com/damienbod/OAuthClientAssertions/blob/main/images/OAuthCCSignedJWTAssertionDPoP.png)
 
