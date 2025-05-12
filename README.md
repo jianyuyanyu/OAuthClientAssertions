@@ -38,3 +38,5 @@ https://docs.duendesoftware.com/foss/accesstokenmanagement/advanced/client_asser
 https://www.scottbrady.io/oauth/removing-shared-secrets-for-oauth-client-authentication
 
 https://damienbod.com/2025/02/24/use-client-assertions-in-openid-connect-and-asp-net-core/
+
+https://github.com/DuendeSoftware/products/tree/main/aspnetcore-authentication-jwtbearer
