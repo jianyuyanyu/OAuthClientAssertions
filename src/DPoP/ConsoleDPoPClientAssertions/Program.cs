@@ -39,7 +39,7 @@ public class Program
                 services.AddClientCredentialsTokenManagement()
                     .AddClient("mobile-dpop-client", client =>
                     {
-                        client.TokenEndpoint = "https://localhost:5001/connect/token";
+                        client.TokenEndpoint = new Uri("https://localhost:5001/connect/token");
 
                         client.ClientId = "mobile-dpop-client";
                         // Using client assertion
