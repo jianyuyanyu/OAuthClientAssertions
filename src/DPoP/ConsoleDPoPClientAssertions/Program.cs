@@ -1,4 +1,5 @@
 using Duende.AccessTokenManagement;
+using Duende.AccessTokenManagement.DPoP;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
@@ -41,15 +42,15 @@ public class Program
                     {
                         client.TokenEndpoint = new Uri("https://localhost:5001/connect/token");
 
-                        client.ClientId = "mobile-dpop-client";
+                        client.ClientId = ClientId.Parse("mobile-dpop-client");
                         // Using client assertion
                         //client.ClientSecret = "905e4892-7610-44cb-a122-6209b38c882f";
 
-                        client.Scope = "scope-dpop";
+                        client.Scope = Scope.Parse("scope-dpop");
                         client.DPoPJsonWebKey = CreateDPoPKey();
                     });
 
-                services.AddClientCredentialsHttpClient("mobile-dpop-client", "mobile-dpop-client", client =>
+                services.AddClientCredentialsHttpClient("mobile-dpop-client", ClientCredentialsClientName.Parse("mobile-dpop-client"), client =>
                 {
                     client.BaseAddress = new Uri("https://localhost:5005/");
                 });
@@ -60,12 +61,12 @@ public class Program
         return host;
     }
 
-    private static string CreateDPoPKey()
+    private static DPoPProofKey CreateDPoPKey()
     {
         var key = new RsaSecurityKey(RSA.Create(2048));
         var jwk = JsonWebKeyConverter.ConvertFromRSASecurityKey(key);
         jwk.Alg = "PS256";
         var jwkJson = JsonSerializer.Serialize(jwk);
-        return jwkJson;
+        return DPoPProofKey.Parse(jwkJson);
     }
 }

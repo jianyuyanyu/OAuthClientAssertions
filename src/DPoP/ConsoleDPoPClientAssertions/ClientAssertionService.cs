@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography.X509Certificates;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ConsoleDPoPClientAssertions;
@@ -21,8 +22,7 @@ public class ClientAssertionService : IClientAssertionService
         _options = options;
     }
 
-    public Task<ClientAssertion?> GetClientAssertionAsync(
-      string? clientName = null, TokenRequestParameters? parameters = null)
+    public Task<ClientAssertion?> GetClientAssertionAsync(ClientCredentialsClientName? clientName = null, TokenRequestParameters? parameters = null, CancellationToken ct = default)
     {
         if (clientName == "mobile-dpop-client")
         {
@@ -38,7 +38,7 @@ public class ClientAssertionService : IClientAssertionService
             var descriptor = new SecurityTokenDescriptor
             {
                 Issuer = options.ClientId,
-                Audience = options.TokenEndpoint,
+                Audience = options.TokenEndpoint!.ToString(),
                 Expires = DateTime.UtcNow.AddMinutes(1),
                 SigningCredentials = signingCredentials,
 
