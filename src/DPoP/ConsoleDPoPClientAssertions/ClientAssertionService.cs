@@ -37,7 +37,7 @@ public class ClientAssertionService : IClientAssertionService
 
             var descriptor = new SecurityTokenDescriptor
             {
-                Issuer = options.ClientId!.ToString(),
+                Issuer = options.ClientId!.Value,
                 Audience = options.TokenEndpoint!.ToString(),
                 Expires = DateTime.UtcNow.AddMinutes(1),
                 SigningCredentials = signingCredentials,
@@ -45,7 +45,7 @@ public class ClientAssertionService : IClientAssertionService
                 Claims = new Dictionary<string, object>
                 {
                     { JwtClaimTypes.JwtId, Guid.NewGuid().ToString() },
-                    { JwtClaimTypes.Subject, options.ClientId!.ToString()! },
+                    { JwtClaimTypes.Subject, options.ClientId.ToString()! },
                     { JwtClaimTypes.IssuedAt, DateTime.UtcNow.ToEpochTime() }
                 }
             };
